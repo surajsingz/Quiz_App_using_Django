@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #b92b27, #1565c0)
+} 
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #99d6ff;
+
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form class="box">
+                    <h1>User Login</h1>
+                    <p class="text"><b> Make your QUIZ here!</b></p>
+                    <p class="text"> Click to Continue....</p>
+                     <a href="/teacher/teacherlogin" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Login</a>
+                     <a href="/teacher/teachersignup" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% comment %} <section id="section-jumbotron" class="jumbotron jumbotron d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1 class="display-4 text-info">Make your Quiz Here</h1>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+    
+    <br><br><br>
+  </div>  
+</section> {% endcomment %}
+
+
+</body>
+
+</html>
