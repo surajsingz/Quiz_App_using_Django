@@ -11,9 +11,7 @@ urlpatterns = [
 
 
     path('',views.home_view,name=''),
-    path('logout', LogoutView.as_view(template_name='quiz/logout.html'),name='logout'),
-    path('aboutus', views.aboutus_view),
-    path('contactus', views.contactus_view),
+    path('logout/', LogoutView.as_view(template_name='quiz/logout.html'),name='logout'),
     path('afterlogin', views.afterlogin_view,name='afterlogin'),
 
 
@@ -48,6 +46,4 @@ urlpatterns = [
     path('admin-view-question', views.admin_view_question_view,name='admin-view-question'),
     path('view-question/<int:pk>', views.view_question_view,name='view-question'),
     path('delete-question/<int:pk>', views.delete_question_view,name='delete-question'),
-
-
 ]
